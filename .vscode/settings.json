@@ -1,0 +1,6 @@
+{
+    "prettier.printWidth": 150,
+    "prettier.jsxSingleQuote": true,
+    "prettier.resolveGlobalModules": false,
+    "prettier.singleAttributePerLine": true
+}

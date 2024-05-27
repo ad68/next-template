@@ -1,0 +1,25 @@
+import { consoleLog_BlackOrange } from "@/helper";
+import axios from "axios";
+
+const useAxios = axios.create({
+  headers: {
+    Authorization:
+      "bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI4TVE0TEw2Z2lHQUxvcEtkZUR5UkxpdnBMeHBQM1ZuRVJ5djZ4V0ZSU0lZIn0.eyJleHAiOjE3MTU1Mjk4MjksImlhdCI6MTcxNTQ5MzgyOSwianRpIjoiNmNlMWYyZjgtYWJlNy00NDYxLTkwODYtM2U3ZTE1MWU0NzBiIiwiaXNzIjoiaHR0cHM6Ly9zc28udGF6bWlueWFkYWsuY29tL2F1dGgvcmVhbG1zL3NhbmFhcCIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJiNWIwMzA3OC1hODYzLTRlZjMtYjcxMC05ZTEzMjRmODhiOGEiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJzYW5hYXAtcmVzdC1hcGkiLCJzZXNzaW9uX3N0YXRlIjoiODQ3ZjEyZmYtMTJjNS00OGJmLThiZjctMDA2ZjQyM2MzODgzIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIiwiaHR0cHM6Ly9zc28udGF6bWlueWFkYWsuY29tIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXNhbmFhcCIsIm9mZmxpbmVfYWNjZXNzIiwiYWRtaW4iLCJ1bWFfYXV0aG9yaXphdGlvbiIsInVzZXIiXX0sInJlc291cmNlX2FjY2VzcyI6eyJzYW5hYXAtcmVzdC1hcGkiOnsicm9sZXMiOlsiY2xpZW50X3VzZXIiLCJjbGllbnRfYWRtaW4iXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6Ijg0N2YxMmZmLTEyYzUtNDhiZi04YmY3LTAwNmY0MjNjMzg4MyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwicHJlZmVycmVkX3VzZXJuYW1lIjoidGF6bWluIn0.lF4o76dqVfELLZSgA_2DsL5Ozi_bU8tyebmd2ImMPYJGpsFGHESW-Q31iGM8z7PINU804B2g7GFMYTx-ZuHfhqmSw70MQD_AkAEnrpuh4ldtTxk-n5agC6OMxnfHihjA5AT4uEX85iPEljEK8UC4vUGzP-rcH_o8XGKvXmeTC4uEhJIO0zp3cxsq_cuZrTl1LBB2p_YUDJWY7Pml9mdUOVboFMR2auPolAQ4KVhTwdern6tCO_U6oeoxtXeNHHLRSTfz6YolX4sS7oJxlUkR_dtmmFzAW46SS28CTrAkjvDm4ErONDA8JX6uHbvr2q6BDUa26jc8kJlLZAZNaskxFQ",
+  },
+});
+useAxios.interceptors.response.use(
+  function (response) {
+    // Any status code that lie within the range of 2xx cause this function to trigger
+    // Do something with response data
+
+    return response;
+  },
+  function (error) {
+    // Any status codes that falls outside the range of 2xx cause this function to trigger
+    // Do something with response error
+    consoleLog_BlackOrange(error);
+    return Promise.reject(error);
+  },
+);
+
+export default useAxios;

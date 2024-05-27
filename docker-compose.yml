@@ -1,0 +1,36 @@
+version: "3.8"
+
+services:
+  TazminMachine-Front:
+    image: tazminmachine-front:latest
+    build: 
+        context: .
+        args:
+          NEXT_PUBLIC_API_URL: http://192.168.10.117:8282/tazmin/tazmin-mashin/
+    ports:
+      - 80:3000
+
+
+#  backend:
+#    image: web-back:latest
+#    depends_on:
+#      - mongo
+#    networks:
+#      - duck
+#      - duck_front
+#    ports:
+#      - 5000:5000
+#    environment:
+#      - MONGODB_URI=mongodb://mongo/zoodcode-duck-spawner
+#  mongo:
+#    image: mongo:4.4-focal
+#    volumes:
+#      - mongo_data:/data/db
+#    networks:
+#      - duck
+#networks:
+#  duck:
+#  duck_front:
+#
+#volumes:
+#  mongo_data:
