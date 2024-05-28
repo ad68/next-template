@@ -75,7 +75,7 @@ export default function RootLayout({ children }) {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <html lang='fa' dir='rtl' className={`${yekanbakh.variable} ${figtree.variable}`}>
+    <html lang='Fa' dir='rtl' className={`${yekanbakh.variable} ${figtree.variable}`}>
       <body className='dark:bg-black'>
         <TopLoader />
         <Header />

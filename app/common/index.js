@@ -6,12 +6,9 @@ import Modal from "./Modal";
 import LoadingSpinner from "./LoadingSpinner";
 import Button from "./Button";
 import RangePicker from "./RangePicker";
-import CarLicensePlate from "./CarLicensePlate";
-import CycleLicensePlate from "./CycleLicensePlate";
 import ConfirmModal from "./ConfirmModal";
 import QuestionModal from "./QuestionModal";
 import DeleteModal from "./DeleteModal";
-import Notify from "./Notify";
 import ComponentLoading from "./ComponentLoading";
 import ErrorMessage from "./Message/ErrorMessage";
 export {
@@ -23,12 +20,9 @@ export {
   Button,
   RangePicker,
   Modal,
-  CarLicensePlate,
-  CycleLicensePlate,
   ConfirmModal,
   QuestionModal,
   DeleteModal,
-  Notify,
   ComponentLoading,
   ErrorMessage,
 };
