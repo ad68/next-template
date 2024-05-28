@@ -12,18 +12,11 @@ export const tailwindColors = {
   bermuda: "#78dcca",
   blue: "#2c8ee8",
   red: "#E14856",
-  "gray-blak": "#262626",
-  "gray-100": "#8b929a36",
-  "gray-200": "#3e4151",
 };
 
 module.exports = {
   darkMode: "selector",
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     screens: {
       sm: "640px",
