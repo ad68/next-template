@@ -1,12 +1,10 @@
 import "./globals.css";
 import { Figtree } from "next/font/google";
 import localFont from "next/font/local";
-import { Header } from "./components/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TopLoader from "../common/TopLoader";
-import ScrollTop from "./components/ScrollTop";
 import { Toaster } from "react-hot-toast";
-
 const figtree = Figtree({
   display: "block",
   subsets: ["latin"],
@@ -49,7 +47,6 @@ const yekanbakh = localFont({
   ],
   variable: "--font-yekanbakh",
 });
-
 export const metadata = {
   title: "  نام سایت | صفحه اصلی",
   description: "توضیحات",
@@ -78,13 +75,8 @@ export default function RootLayout({ children }) {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <html
-      lang="fa"
-      dir="rtl"
-      className={`${yekanbakh.variable} ${figtree.variable}`}
-    >
-      <body className="dark:bg-black">
-        {/*  <ScrollTop /> */}
+    <html lang='fa' dir='rtl' className={`${yekanbakh.variable} ${figtree.variable}`}>
+      <body className='dark:bg-black'>
         <TopLoader />
         <Header />
         <Toaster />

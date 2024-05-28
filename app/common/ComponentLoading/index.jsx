@@ -6,7 +6,7 @@ import "./style.css";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({ show }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -21,13 +21,8 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="flex w-full items-center justify-center">
-      <div className="lds-ellipsis">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+    <section className={`flex w-full items-center justify-center absolute left-0 top-0 h-full z-10 transition-all duration-500 bg-white ${show ? 'visible opacity-100' : "invisible opacity-0"}`}>
+      <div className="loader"></div>
     </section>
   );
 }

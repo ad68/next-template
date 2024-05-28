@@ -9,7 +9,7 @@ export default function Index({ state, setState, disabled, title }) {
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
   /*  const onChange = (e) => {
-    console.log(e.target.checked);
+  
   }; */
   //
   // ──────────────────────────────────────────────────── I ──────────

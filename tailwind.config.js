@@ -10,7 +10,7 @@ export const tailwindColors = {
   silver: "#ecebff",
   "bubble-gum": "#ff77e9",
   bermuda: "#78dcca",
-  blue: "#0165e1",
+  blue: "#2c8ee8",
   red: "#E14856",
   "gray-blak": "#262626",
   "gray-100": "#8b929a36",
@@ -36,8 +36,12 @@ module.exports = {
       colors: tailwindColors,
       container: {
         center: true,
-        width: {
-          md: "max-w-screen-2xl",
+        screens: {
+          sm: "600px",
+          md: "728px",
+          lg: "984px",
+          xl: "1240px",
+          "2xl": "1170px",
         },
         padding: {
           DEFAULT: "0rem",

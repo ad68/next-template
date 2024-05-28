@@ -5,8 +5,6 @@ import Image from "next/image";
 import Delete from "./icon/delete.svg";
 import { useAxiosWithToken } from "@/hooks";
 import "./style.css";
-import { message } from "antd";
-import toast from "react-hot-toast";
 import { showNotify } from "@/helper";
 //
 // ────────────────────────────────────────────────────────── I ──────────

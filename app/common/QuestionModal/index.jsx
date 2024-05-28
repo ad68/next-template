@@ -24,7 +24,7 @@ export default function Index({
   const modalBox = useRef();
   const overlay = useRef();
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [loading, setLoading] = useState(false);
+
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
   useEffect(() => {
     if (open) {

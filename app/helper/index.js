@@ -221,37 +221,4 @@ export const consoleLog_Purple = (value, title) => {
   );
   console.log(value);
 };
-const oldShowNotify = () => {
-  /*  var notify = document.getElementById("myNotifyWrapper");
-  var notifyBox = document.getElementById("myNotifyBox");
-  var notifyText = document.getElementById("myNotifyText");
-  var notifyCheck = document.getElementById("myNotifyCheckIcon");
-  var notifyClose = document.getElementById("myNotifyCloseIcon");
-  if (type === "error") {
-    notifyBox.style.backgroundColor = "#ffc7c7";
-    notifyBox.style.borderColor = "red";
-    notifyCheck.style.display = "none";
-    notifyClose.style.display = "flex";
-  } else if (type === "success") {
-    notifyBox.style.backgroundColor = "#DDF3EC";
-    notifyBox.style.borderColor = "#1CAE81";
-    notifyCheck.style.display = "flex";
-    notifyClose.style.display = "none";
-  } else {
-    notifyCheck.style.display = "none";
-    notifyClose.style.display = "none";
-  }
-  notify.style.display = "flex";
-  notifyText.innerHTML = text;
-  setTimeout(() => {
-    notify.style.top = "100px";
-    notify.style.opacity = "1";
-  }, 10);
-  setTimeout(() => {
-    notify.style.top = "80px";
-    notify.style.opacity = "0";
-  }, 3000);
-  setTimeout(() => {
-    notify.style.display = "none";
-  }, 3500); */
-};
+

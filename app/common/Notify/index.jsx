@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { IconClose, IconNotifyCheck, IconSpcCheck } from "../icons";
-import Icon from "@ant-design/icons/lib/components/Icon";
+
 
 //
 // ────────────────────────────────────────────────────────── I ──────────

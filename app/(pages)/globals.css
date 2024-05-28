@@ -17,9 +17,7 @@ html {
   backdrop-filter: blur(9.2px);
   -webkit-backdrop-filter: blur(9.2px);
 }
-.mobileMenu {
-  height: calc(100% - 63px);
-}
+
 .rtl {
   direction: rtl;
 }
@@ -46,3 +44,6 @@ html {
   background: #555;
   border-radius: 40px;
 }
+
+
+
