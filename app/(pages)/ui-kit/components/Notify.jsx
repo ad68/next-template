@@ -1,3 +1,4 @@
+'use client'
 import { Button } from '@/common'
 import { NotifyMessage, NotifyType } from '@/enums'
 import { showNotify } from '@/helper'
@@ -27,11 +28,10 @@ export default function Index() {
     //
     return (
         <section>
-            <section className='text-3xl font-bold text-center'>Buttons</section>
+            <section className='text-3xl font-bold text-center mt-10'>Notify</section>
             <section className='flex justify-center gap-1'>
-                <Button type='primary' onClick={() => showNotify(NotifyMessage.GLOBAL_ERROR, NotifyType.ERROR)}>Primary</Button>
-                <Button type='danger'>Danger</Button>
-
+                <Button size="small" type='outlined' danger onClick={() => showNotify(NotifyMessage.GLOBAL_ERROR, NotifyType.ERROR)}>Error notify</Button>
+                <Button size="small" type='outlined' onClick={() => showNotify(NotifyMessage.SUCCESS_ACTION, NotifyType.SUCCESS)}>Success notify</Button>
             </section>
         </section>
     )

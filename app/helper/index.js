@@ -62,10 +62,10 @@ export const showNotify = (text, type) => {
     )); */
     toast.success(text, {
       style: {
-        border: "1px solid #1CAE81",
+        border: "1px solid #22c55e",
         padding: "16px",
-        color: "black",
-        backgroundColor: "#DDF3EC",
+        color: "white",
+        backgroundColor: "#22c55e",
       },
       iconTheme: {
         primary: "#1CAE81",
@@ -76,13 +76,13 @@ export const showNotify = (text, type) => {
   if (type === "error") {
     toast.error(text, {
       style: {
-        border: "1px solid red",
+        border: "1px solid #e14856",
         padding: "16px",
-        color: "black",
-        backgroundColor: "#ffc7c7",
+        color: "white",
+        backgroundColor: "#e14856",
       },
       iconTheme: {
-        primary: "red",
+        primary: "#7b1922",
         secondary: "#ffc7c7",
       },
     });
@@ -98,10 +98,7 @@ export const consoleLog_Blue = (value, title) => {
   } else {
     logTitle = "Blue Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: #0096FF; color: white",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: #0096FF; color: white");
   console.log(value);
 };
 export const consoleLog_Red = (value, title) => {
@@ -111,10 +108,7 @@ export const consoleLog_Red = (value, title) => {
   } else {
     logTitle = "Red Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: #EB4747; color: white",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: #EB4747; color: white");
   console.log(value);
 };
 export const consoleLog_yellow = (value, title) => {
@@ -124,10 +118,7 @@ export const consoleLog_yellow = (value, title) => {
   } else {
     logTitle = "yellow Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: yellow; color: black",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: yellow; color: black");
   console.log(value);
 };
 export const consoleLog_green = (value, title) => {
@@ -137,10 +128,7 @@ export const consoleLog_green = (value, title) => {
   } else {
     logTitle = "Green Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: #34BE82; color: white",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: #34BE82; color: white");
   console.log(value);
 };
 export const consoleLog_BlackGreen = (value, title) => {
@@ -150,10 +138,7 @@ export const consoleLog_BlackGreen = (value, title) => {
   } else {
     logTitle = "Black Green Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: black; color: #80ff00",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: black; color: #80ff00");
   console.log(value);
 };
 export const consoleLog_BlackOrange = (value, title) => {
@@ -163,10 +148,7 @@ export const consoleLog_BlackOrange = (value, title) => {
   } else {
     logTitle = "Black Orange Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: black; color: #ff8000",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: black; color: #ff8000");
   console.log(value);
 };
 export const consoleLog_BlackYellow = (value, title) => {
@@ -176,10 +158,7 @@ export const consoleLog_BlackYellow = (value, title) => {
   } else {
     logTitle = "Black yellow Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: black; color: yellow",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: black; color: yellow");
   console.log(value);
 };
 export const consoleLog_BlackRed = (value, title) => {
@@ -189,10 +168,7 @@ export const consoleLog_BlackRed = (value, title) => {
   } else {
     logTitle = "Black Red Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: black; color: red",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: black; color: red");
   console.log(value);
 };
 export const consoleLog_Pink = (value, title) => {
@@ -202,10 +178,7 @@ export const consoleLog_Pink = (value, title) => {
   } else {
     logTitle = "Pink Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: pink; color: black",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: pink; color: black");
   console.log(value);
 };
 export const consoleLog_Purple = (value, title) => {
@@ -215,10 +188,6 @@ export const consoleLog_Purple = (value, title) => {
   } else {
     logTitle = "Purple Title";
   }
-  console.log(
-    `%c <--//////////// ${logTitle} ///////////////////-->`,
-    "background: Purple; color: white",
-  );
+  console.log(`%c <--//////////// ${logTitle} ///////////////////-->`, "background: Purple; color: white");
   console.log(value);
 };
-
