@@ -51,42 +51,34 @@ export const getPersianMonthText = (month) => {
       return "اسفند";
   }
 };
-export const showNotify = (text, type) => {
-  if (type === "success") {
-    /* JSX Content */
-    /* toast((t) => (
-      <span>
-        Custom and <b>bold</b>
-        <button onClick={() => toast.dismiss(t.id)}>Dismiss</button>
-      </span>
-    )); */
+
+export const notify = {
+  Success: (text) =>
     toast.success(text, {
       style: {
-        border: "1px solid #22c55e",
+        border: "1px solid #1CAE81",
         padding: "16px",
-        color: "white",
-        backgroundColor: "#22c55e",
+        color: "black",
+        backgroundColor: "#DDF3EC",
       },
       iconTheme: {
         primary: "#1CAE81",
         secondary: "#FFFAEE",
       },
-    });
-  }
-  if (type === "error") {
+    }),
+  Error: (text) =>
     toast.error(text, {
       style: {
-        border: "1px solid #e14856",
+        border: "1px solid red",
         padding: "16px",
-        color: "white",
-        backgroundColor: "#e14856",
+        color: "black",
+        backgroundColor: "#ffc7c7",
       },
       iconTheme: {
-        primary: "#7b1922",
+        primary: "red",
         secondary: "#ffc7c7",
       },
-    });
-  }
+    }),
 };
 export const scrollToTop = () => {
   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
